@@ -1,5 +1,6 @@
 # MG-Notes
-
+# deploy to railway
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/0MCpi4?referralCode=OCkeMo)
 ## Deploy To Heroku
 
 <a href="https://heroku.com/deploy?template=https://github.com/mahi-06/mahiacetxt">
