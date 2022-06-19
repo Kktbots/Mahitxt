@@ -61,7 +61,7 @@ async def account_login(bot: Client, m: Message):
 #     os.remove(y)
 #     os.remove("top.mp4")
         
-@bot.on_message(filters.command(["link"])& ~filters.edited)
+@bot.on_message(filters.command(["link"]))
 async def upload(bot: Client, m: Message):
     editable = await m.reply_text('Send link in **Name&link** format to download')
     input9: Message = await bot.listen(editable.chat.id)
@@ -201,7 +201,7 @@ async def upload(bot: Client, m: Message):
         
     
     
-@bot.on_message(filters.command(["aio"])& ~filters.edited)
+@bot.on_message(filters.command(["aio"]))
 async def aiohttp(bot: Client, m: Message):
     editable = await m.reply_text('Send link in **Name&link** format to download')
     input9: Message = await bot.listen(editable.chat.id)
@@ -214,7 +214,7 @@ async def aiohttp(bot: Client, m: Message):
     await p.delete(True)
     os.remove(k)
     
-@bot.on_message(filters.command(["ytdlp"])& ~filters.edited)
+@bot.on_message(filters.command(["ytdlp"]))
 async def account_login(bot: Client, m: Message):
     
     editable = await m.reply_text('Send link in **Name&link** format to get its info')
@@ -248,7 +248,7 @@ async def account_login(bot: Client, m: Message):
     await m.reply(f"Name : `{name}`\n\n:Link : `{url}`",reply_markup=buttons_markup)
             
 
-@bot.on_message(filters.command(["pyro"])& ~filters.edited)
+@bot.on_message(filters.command(["pyro"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text("Send txt file**")
     input: Message = await bot.listen(editable.chat.id)
@@ -513,7 +513,7 @@ async def account_login(bot: Client, m: Message):
         await m.reply_text(str(e))
     await m.reply_text("Done")
 
-@bot.on_message(filters.command(["top"])& ~filters.edited)
+@bot.on_message(filters.command(["top"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(f"**Hi im Topranker dl**")
     input: Message = await bot.listen(editable.chat.id)
